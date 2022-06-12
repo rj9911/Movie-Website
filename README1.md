@@ -26,3 +26,7 @@ Let's start creating the JSX in return.Remember to use the ClassName inplace of 
 ->Empty Array which is passed in the useState function is to take use of the setMovies function.
 ->Now we can dynamically pass the movie[0] in the movie1 variable.
 -> setMovies(data.search) allows us to populate the movies.
+
+# Search Functionality
+For this you hv to use state hook, you can hv multiple states and also multiple useEffect hooks for one component, there is no limit.
+Last part is how we render the array of movies when we search in the search box. we use the img(onclick) listener. We call the searchMovies function and pass a new title.
