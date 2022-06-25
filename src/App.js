@@ -23,7 +23,8 @@ const [searchTerm , setsearchTerm] = useState('');
 // Empty Search String is passed to hv search initially empty.
 
 const searchMovies = async (title) => {
-  const response = await fetch(`${API_URL}&s=${title}`) // To fetch the data from the API
+// const response = await fetch(`${API_URL}&s=${title}`) // To fetch the data from the API
+  const response = await fetch(API_URL+'&s='+title) // To fetch the data from the API
   const data = await response.json(); 
   setMovies(data.Search);
 }  
